@@ -1,0 +1,2 @@
+com.ahmedhoussambouzine.dao.DaoImpl
+com.ahmedhoussambouzine.metier.MetierImpl
