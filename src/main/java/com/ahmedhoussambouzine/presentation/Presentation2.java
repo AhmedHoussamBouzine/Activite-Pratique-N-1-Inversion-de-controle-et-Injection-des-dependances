@@ -20,7 +20,6 @@ public class Presentation2 {
             String metierClassName = scanner.nextLine();
             Class cMetier = Class.forName(metierClassName);
             IMetier metier = (IMetier) cMetier.getDeclaredConstructor().newInstance();
-            // metier.setDao(dao);  we don't do that we should do it with dynamic injection
             Method method = cMetier.getMethod("setDao", IDao.class);
             method.invoke(metier, dao);
             System.out.println("Result : " +metier.calcul());
